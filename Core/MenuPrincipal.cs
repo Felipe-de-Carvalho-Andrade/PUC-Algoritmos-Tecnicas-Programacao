@@ -11,6 +11,8 @@ namespace Core {
                 Console.WriteLine("3 - Exercícios de Repetição");
                 Console.WriteLine("4 - Exercícios de Vetores e Matrizes");
                 Console.WriteLine("5 - Exercícios do Laboratório");
+                Console.WriteLine("6 - Trabalho Prático 01");
+                Console.WriteLine("7 - Trabalho Prático 02");
                 Console.WriteLine("0 - Sair");
 
                 Console.Write("Escolha: ");

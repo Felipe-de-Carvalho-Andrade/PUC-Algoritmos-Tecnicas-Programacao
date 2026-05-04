@@ -31,6 +31,8 @@ A estrutura do projeto foi pensada para separar responsabilidades e facilitar a 
 │   ├── Repeticao.cs
 │   ├── Vetores.cs
 │   └── Laboratorio.cs
+│   ├── TP1.cs
+│   └── TP2.cs
 │
 ├── 📁 Core/              # Núcleo da aplicação (controle de fluxo)
 │   ├── MenuCategoria.cs
@@ -64,10 +66,68 @@ A aplicação inicia exibindo um menu principal:
 3 - Exercícios de Repetição
 4 - Exercícios de Vetores e Matrizes
 5 - Exercícios do Laboratório
+6 - Trabalho Prático 01
+7 - Trabalho Prático 02
 0 - Sair
 ```
 
 A navegação é gerenciada pela classe `MenuPrincipal`, que delega a execução para `MenuCategoria`.
+
+---
+
+## 🧪 Trabalhos Práticos
+
+### 📌 TP1 — Sistema de Cálculo de Descontos
+
+O **Trabalho Prático 1 (TP1)** consiste em um sistema de cálculo de descontos aplicado a uma compra, considerando regras baseadas na forma de pagamento e no tipo de cliente.
+
+**🔧 Funcionalidades:**
+
+* Validação de entrada de dados (valor da compra, tipo de pagamento e cliente)
+* Cálculo de descontos progressivos:
+
+  * Por forma de pagamento (Dinheiro ou Cartão)
+  * Por valor da compra
+  * Por fidelidade do cliente
+* Regra adicional para cliente fidelidade pagando em dinheiro
+* Aplicação de limite máximo de desconto (15%)
+* Exibição detalhada do resultado final
+
+**📊 Regras principais:**
+
+* Descontos variam entre **0% e 15%**
+* Cliente fidelidade pode receber bônus adicionais
+* Sistema robusto contra entradas inválidas
+
+**📁 Arquivo:**
+`Categorias/TP1.cs`
+
+---
+
+### 📌 TP2 — Simulador de Eleição para Prefeito
+
+O **Trabalho Prático 2 (TP2)** implementa um sistema completo de simulação de eleição, incluindo contagem de votos e verificação de empate.
+
+**🗳️ Funcionalidades:**
+
+* Cadastro do número de eleitores (mínimo de 10)
+* Definição de dois candidatos com validação
+* Registro de votos com classificação automática:
+
+  * Votos válidos
+  * Votos brancos
+  * Votos nulos
+* Contagem total e cálculo de percentual do vencedor
+* Tratamento de empate com repetição automática da eleição
+
+**🔁 Regras importantes:**
+
+* Voto `0` é considerado branco
+* Votos diferentes dos candidatos são considerados nulos
+* Em caso de empate, uma nova eleição é iniciada automaticamente
+
+**📁 Arquivo:**
+`Categorias/TP2.cs`
 
 ---
 
