@@ -1,4 +1,4 @@
-# 🚀 Codigos-ATP
+# 🚀 PUC-Algoritmos-Tecnicas-Programacao
 
 ### Algoritmos e Técnicas de Programação — Sistemas de Informação | PUC Minas
 
@@ -24,7 +24,7 @@ A aplicação fornece um menu interativo que permite acessar diferentes categori
 A estrutura do projeto foi pensada para separar responsabilidades e facilitar a navegação entre os conteúdos:
 
 ```id="8k2p0z"
-📁 Codigos-ATP
+📁 PUC-Algoritmos-Tecnicas-Programacao
 ├── 📁 Categorias/        # Implementação dos exercícios por tema
 │   ├── Condicionais.cs
 │   ├── Iniciais.cs
@@ -38,8 +38,15 @@ A estrutura do projeto foi pensada para separar responsabilidades e facilitar a 
 │   ├── MenuCategoria.cs
 │   └── MenuPrincipal.cs
 │
-├── Codigos-ATP.csproj    # Configuração do projeto .NET
-├── Codigos-ATP.sln       # Solução do Visual Studio
+├── 📁 docs/              # PDF's com os exercícios
+│   ├── 📁 LAB/
+│   │   ├── LAB_01.pdf
+│   │   └── ...
+│   ├── 01_Iniciais.pdf
+│   └── ...
+│
+├── PUC-Algoritmos-Tecnicas-Programacao.csproj    # Configuração do projeto .NET
+├── PUC-Algoritmos-Tecnicas-Programacao.sln       # Solução do Visual Studio
 ├── Program.cs            # Ponto de entrada da aplicação
 └── README.md             # (Este arquivo)
 ```
