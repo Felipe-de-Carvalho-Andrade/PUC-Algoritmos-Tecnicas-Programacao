@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codigos-ATP", "Codigos-ATP.csproj", "{E79B7C35-846A-DF26-621A-8372C6517163}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PUC-Algoritmos-Tecnicas-Programacao", "PUC-Algoritmos-Tecnicas-Programacao.csproj", "{E79B7C35-846A-DF26-621A-8372C6517163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

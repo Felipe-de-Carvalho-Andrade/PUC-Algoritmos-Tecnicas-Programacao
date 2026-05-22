@@ -5,6 +5,7 @@ using Exercicios.Categorias.Repeticoes;
 using Exercicios.Categorias.Vetores;
 using Exercicios.Categorias.TrabalhoPratico01;
 using Exercicios.Categorias.TrabalhoPratico02;
+using Exercicios.Categorias.TrabalhoPratico03;
 
 namespace Core {
     class MenuCategoria {
@@ -38,6 +39,10 @@ namespace Core {
                     new TP2().EleicaoPrefeito();
                     break;
                 
+                case 8:
+                    new TP3().SistemaDeTemperatura();
+                    break;
+
                 case 0:
                     Console.WriteLine("Encerrando...");
                     break;
