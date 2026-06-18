@@ -6,6 +6,7 @@ using Exercicios.Categorias.Vetores;
 using Exercicios.Categorias.TrabalhoPratico01;
 using Exercicios.Categorias.TrabalhoPratico02;
 using Exercicios.Categorias.TrabalhoPratico03;
+using Exercicios.Categorias.TrabalhoPratico04;
 
 namespace Core {
     class MenuCategoria {
@@ -41,6 +42,10 @@ namespace Core {
                 
                 case 8:
                     new TP3().SistemaDeTemperatura();
+                    break;
+
+                case 9:
+                    new TP4().EleicaoPrefeito();
                     break;
 
                 case 0:

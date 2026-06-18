@@ -23,16 +23,18 @@ A aplicação fornece um menu interativo que permite acessar diferentes categori
 
 A estrutura do projeto foi pensada para separar responsabilidades e facilitar a navegação entre os conteúdos:
 
-```id="8k2p0z"
+```text
 📁 PUC-Algoritmos-Tecnicas-Programacao
 ├── 📁 Categorias/        # Implementação dos exercícios por tema
 │   ├── Condicionais.cs
 │   ├── Iniciais.cs
 │   ├── Repeticao.cs
 │   ├── Vetores.cs
-│   └── Laboratorio.cs
+│   ├── Laboratorio.cs
 │   ├── TP1.cs
-│   └── TP2.cs
+│   ├── TP2.cs
+│   ├── TP3.cs
+│   └── TP4.cs
 │
 ├── 📁 Core/              # Núcleo da aplicação (controle de fluxo)
 │   ├── MenuCategoria.cs
@@ -45,8 +47,8 @@ A estrutura do projeto foi pensada para separar responsabilidades e facilitar a 
 │   ├── 01_Iniciais.pdf
 │   └── ...
 │
-├── PUC-Algoritmos-Tecnicas-Programacao.csproj    # Configuração do projeto .NET
-├── PUC-Algoritmos-Tecnicas-Programacao.sln       # Solução do Visual Studio
+├── PUC-Algoritmos-Tecnicas-Programacao.csproj
+├── PUC-Algoritmos-Tecnicas-Programacao.sln
 ├── Program.cs            # Ponto de entrada da aplicação
 └── README.md             # (Este arquivo)
 ```
@@ -66,7 +68,7 @@ A estrutura do projeto foi pensada para separar responsabilidades e facilitar a 
 
 A aplicação inicia exibindo um menu principal:
 
-```id="s4v6f8"
+```text
 ===== SISTEMA DE EXERCÍCIOS =====
 1 - Exercícios Iniciais
 2 - Exercícios Condicionais
@@ -75,6 +77,8 @@ A aplicação inicia exibindo um menu principal:
 5 - Exercícios do Laboratório
 6 - Trabalho Prático 01
 7 - Trabalho Prático 02
+8 - Trabalho Prático 03
+9 - Trabalho Prático 04
 0 - Sair
 ```
 
@@ -88,11 +92,10 @@ A navegação é gerenciada pela classe `MenuPrincipal`, que delega a execução
 
 O **Trabalho Prático 1 (TP1)** consiste em um sistema de cálculo de descontos aplicado a uma compra, considerando regras baseadas na forma de pagamento e no tipo de cliente.
 
-**🔧 Funcionalidades:**
+#### 🔧 Funcionalidades
 
 * Validação de entrada de dados (valor da compra, tipo de pagamento e cliente)
 * Cálculo de descontos progressivos:
-
   * Por forma de pagamento (Dinheiro ou Cartão)
   * Por valor da compra
   * Por fidelidade do cliente
@@ -100,13 +103,14 @@ O **Trabalho Prático 1 (TP1)** consiste em um sistema de cálculo de descontos 
 * Aplicação de limite máximo de desconto (15%)
 * Exibição detalhada do resultado final
 
-**📊 Regras principais:**
+#### 📊 Regras Principais
 
 * Descontos variam entre **0% e 15%**
 * Cliente fidelidade pode receber bônus adicionais
 * Sistema robusto contra entradas inválidas
 
-**📁 Arquivo:**
+#### 📁 Arquivo
+
 `Categorias/TP1.cs`
 
 ---
@@ -115,26 +119,90 @@ O **Trabalho Prático 1 (TP1)** consiste em um sistema de cálculo de descontos 
 
 O **Trabalho Prático 2 (TP2)** implementa um sistema completo de simulação de eleição, incluindo contagem de votos e verificação de empate.
 
-**🗳️ Funcionalidades:**
+#### 🗳️ Funcionalidades
 
 * Cadastro do número de eleitores (mínimo de 10)
 * Definição de dois candidatos com validação
 * Registro de votos com classificação automática:
-
   * Votos válidos
   * Votos brancos
   * Votos nulos
 * Contagem total e cálculo de percentual do vencedor
 * Tratamento de empate com repetição automática da eleição
 
-**🔁 Regras importantes:**
+#### 🔁 Regras Importantes
 
 * Voto `0` é considerado branco
 * Votos diferentes dos candidatos são considerados nulos
 * Em caso de empate, uma nova eleição é iniciada automaticamente
 
-**📁 Arquivo:**
+#### 📁 Arquivo
+
 `Categorias/TP2.cs`
+
+---
+
+### 📌 TP3 — Sistema de Controle de Temperaturas
+
+O **Trabalho Prático 3 (TP3)** consiste em uma aplicação para gerenciamento e análise térmica multicidades, utilizando conceitos avançados de matrizes e tratamento de estados vazios.
+
+#### 🌡️ Funcionalidades
+
+* Configuração dinâmica do número de cidades envolvidas
+* Histórico móvel de até 8 medições por cidade com deslocamento automático dos dados
+* Inicialização inteligente da matriz utilizando `double.NaN`
+* Menu interativo dedicado para:
+  * Registrar medições
+  * Exibir históricos
+  * Emitir relatórios estatísticos
+* Cálculo de médias ignorando posições vazias
+
+#### 📊 Regras Principais
+
+* Utilização de vetores para armazenamento dos nomes das cidades
+* Uso de matriz bidimensional `[n,8]` para as medições
+* Novas medições são inseridas na primeira posição do histórico
+* Proteção contra divisão por zero quando não houver registros
+
+#### 📁 Arquivo
+
+`Categorias/TP3.cs`
+
+---
+
+### 📌 TP4 — Sistema de Apuração de Eleição via Arquivo
+
+O **Trabalho Prático 4 (TP4)** evolui o conceito de votação simulando uma apuração de eleição majoritária por meio de arquivos texto.
+
+#### 📩 Funcionalidades
+
+* Leitura automática das configurações da eleição através de `eleicao_in.txt`
+* Cadastro de múltiplos candidatos
+* Cadastro completo dos eleitores:
+  * Título eleitoral
+  * Nome
+  * Data de nascimento
+  * Idade
+  * Voto
+* Contagem automática de:
+  * Votos válidos
+  * Votos brancos
+  * Votos nulos
+* Exibição dos resultados no console
+* Geração automática do relatório em `eleicao_out.txt`
+
+#### 🔁 Regras Importantes
+
+* Mínimo de 3 candidatos
+* Mínimo de 10 eleitores
+* Validação da consistência dos dados de entrada
+* Voto `0` representa voto branco
+* Códigos inexistentes são classificados como votos nulos
+* Tratamento de empates e ausência de votos válidos
+
+#### 📁 Arquivo
+
+`Categorias/TP4.cs`
 
 ---
 
@@ -146,6 +214,14 @@ O projeto cobre os principais fundamentos iniciais da programação:
 * **Estruturas Condicionais** (`if`, `else`, `switch`)
 * **Estruturas de Repetição** (`for`, `while`, `do-while`)
 * **Vetores e Matrizes**
+* **Vetores Paralelos**
+* **Matrizes Bidimensionais**
+* **Manipulação de Arquivos de Texto**
+  * `StreamReader`
+  * `StreamWriter`
+* **Funções e Procedimentos**
+* **Modularização**
+* **Clean Code**
 * **Práticas Orientadas de Laboratório**
 
 ---
@@ -177,13 +253,17 @@ Este projeto tem como finalidade:
 
 * Consolidar fundamentos de programação e da linguagem C#
 * Exercitar resolução de problemas
+* Aplicar conceitos de lógica computacional
+* Desenvolver organização e modularização de código
+* Praticar estruturas de dados fundamentais
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por Felipe de Carvalho Andrade, estudante de **Sistemas de Informação — PUC Minas**
-Disciplina: **Algoritmos e Técnicas de Programação**
+Desenvolvido por **Felipe de Carvalho Andrade**, estudante de **Sistemas de Informação — PUC Minas**
+
+**Disciplina:** Algoritmos e Técnicas de Programação
 
 ---
 

@@ -1,0 +1,58 @@
+3
+25
+Zé Betão
+35
+Chico José
+45
+Pedro Chiquito
+10
+1001
+Maria Oliveira
+10/03/1985
+41
+25
+1002
+João Souza
+22/07/1998
+28
+35
+1003
+Ana Costa
+05/12/2000
+25
+0
+1004
+Carlos Santos
+14/02/1970
+56
+45
+1005
+Patricia Lima
+30/08/1992
+33
+25
+1006
+Lucas Almeida
+18/11/2004
+21
+99
+1007
+Fernanda Rico
+25/05/1989
+37
+35
+1008
+Ricardo Pereira
+02/01/1965
+61
+0
+1009
+Juliana Gomes
+12/09/1983
+42
+25
+1010
+Marcos Nunes
+29/06/1995
+31
+45

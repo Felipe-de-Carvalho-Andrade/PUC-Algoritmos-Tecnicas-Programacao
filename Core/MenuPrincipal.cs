@@ -14,6 +14,7 @@ namespace Core {
                 Console.WriteLine("6 - Trabalho Prático 01");
                 Console.WriteLine("7 - Trabalho Prático 02");
                 Console.WriteLine("8 - Trabalho Prático 03");
+                Console.WriteLine("9 - Trabalho Prático 04");
                 Console.WriteLine("0 - Sair");
 
                 Console.Write("Escolha: ");
